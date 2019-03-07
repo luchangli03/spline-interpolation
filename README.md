@@ -1,2 +1,2 @@
 # spline-intorplation
-spline intorplation implemented by Matlab and C++
+spline interpolation implemented by Matlab and C++
