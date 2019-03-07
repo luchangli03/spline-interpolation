@@ -59,7 +59,14 @@ yn = zeros(1,length(xn));
 for i = 1:length(xn)
     curx = xn(i);
     
-    ParaSet = floor(curx);
+    pos = curx>=x;
+    pos = strfind(pos,1);
+    if(isempty(pos))
+        ParaSet=1;
+    else
+        ParaSet = pos(end);
+    end
+    
     
     if(ParaSet<1)
         ParaSet=1;
